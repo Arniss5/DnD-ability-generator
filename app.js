@@ -7,12 +7,34 @@ let total
 let previousTotals = []
 
 //EVENT LISTENERS
-// rollBtn.addEventListener('click', roll)
-// rerollBtn.addEventListener('click', reroll)
+rollBtn.addEventListener('click', roll)
+rerollBtn.addEventListener('click', reroll)
 
 
 
 //FUNCTIONS
+
+function roll() {
+    current_dice = []
+    getRandomRoll()
+    getRollsArray()
+    renderDiceHtml()
+    getTotal()
+    checkForOnes()
+}
+
+function reroll() {
+    current_dice.forEach((die, i) => {
+        if (die === 1) {
+            current_dice[i] = getRandomRoll()
+        }
+    })
+    renderDiceHtml()
+    getTotal()
+    checkForOnes()
+}
+
+
 function getRandomRoll() {
     return Math.ceil(Math.random() * 6)
 }
@@ -46,6 +68,10 @@ function checkForOnes() {
     if(current_dice.includes(1)) {
         rerollBtn.classList.remove('hidden')
         rollBtn.classList.add('hidden')
+    } else {
+        rerollBtn.classList.add('hidden')
+        rollBtn.classList.remove('hidden')
+        getPrevious()
     }
 }
 
@@ -56,14 +82,14 @@ function getTotal() {
 
 function getPrevious() {
     previousTotals.push(total)
-    document.getElementById('previous-totals-span').textContent = previousTotals
+    document.getElementById('previous-totals-span').textContent = previousTotals.join(', ')
 }
 
-getRollsArray()
+// getRollsArray()
 
-renderDiceHtml()
-checkForOnes()
-getTotal()
+// renderDiceHtml()
+// checkForOnes()
+// getTotal()
 
 
 
