@@ -17,16 +17,16 @@
             <h1>Ability generator</h1>
         </header>
         <main>
-            <button class="roll-btn">Roll</button>
-            <div class="dice-container">
-                <div class="dice">3</div>
+            <button class="roll-btn" id="roll-btn">Roll</button>
+            <div class="dice-container" id="dice-container">
+                <!-- <div class="dice">3</div>
                 <div class="dice lowest">2</div>
                 <div class="dice">5</div>
-                <div class="dice">6</div>
+                <div class="dice">6</div> -->
             </div>
-            <button class="reroll-btn">Re-roll 1s</button>
-            <p class="total-score">Total: 14</p>
-            
+            <button class="reroll-btn hidden" id="reroll-btn">Re-roll 1s</button>
+            <p class="total-score" id="total-score"></p>
+            <p class="previous-totals">Previous: <span id="previous-totals-span"></span></p>
         </main>
     </div>
     

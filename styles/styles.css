@@ -18,17 +18,18 @@ body {
     background-position: center;
     background-size: cover;
     width: 100%;
-    max-width: 650px;
+    max-width: 800px;
     padding-bottom: 1em;
-    margin: 0 auto;
+    margin: 2% auto;
+    border: 3px solid rgb(255, 153, 0);
     
 }
 
 header {
     background-color: rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: space-around;
-    padding: 1em 0;
+    justify-content: space-between;
+    padding: 1em 2%;
 }
 
 .logo {
@@ -68,6 +69,10 @@ button:focus {
     cursor: pointer;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 .dice {
     background: radial-gradient(circle, rgba(255,235,0,1) 0%, rgba(83, 12, 12, 1) 100%);
     font-size: 2.8rem;
@@ -82,12 +87,12 @@ button:focus {
     
 }
 
-.dice.lowest {
+.lowest{
     background: radial-gradient(circle, rgba(255, 235, 0, .4) 0%, rgba(83, 12, 12, .4) 100%);
     box-shadow: 6px 6px 0px rgba(83, 12, 12, .4);
 }
 
 .total-score {
     font-size: 2rem;
-
+    margin-bottom: 1em;
 }
