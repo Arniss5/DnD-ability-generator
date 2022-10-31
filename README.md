@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Code: [Github](https://arniss5.github.io/DnD-ability-generator/)
-- Live Site URL: [Github Pages](https://github.com/Arniss5/DnD-ability-generator)
+- Code: [Github](https://github.com/Arniss5/DnD-ability-generator)
+- Live Site URL: [Github Pages](https://arniss5.github.io/DnD-ability-generator/)
 
 ## My process
 
