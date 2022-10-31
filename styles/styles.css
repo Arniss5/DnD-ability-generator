@@ -81,6 +81,10 @@ header {
     text-align: center;
 }
 
+.previous-totals {
+    margin: 1em 0;
+}
+
 /* BUTTONS */
 
 button {
