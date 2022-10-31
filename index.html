@@ -16,18 +16,23 @@
             <img src="./styles/DnD-Symbol.png" alt="DnD logo" class="logo">
             <h1>Ability generator</h1>
         </header>
-        <main>
-            <button class="roll-btn" id="roll-btn">Roll</button>
+        
+
+            
+            
             <div class="dice-container" id="dice-container">
-                <!-- <div class="dice">3</div>
-                <div class="dice lowest">2</div>
-                <div class="dice">5</div>
-                <div class="dice">6</div> -->
+                <!-- render dice -->
             </div>
-            <button class="reroll-btn hidden" id="reroll-btn">Re-roll 1s</button>
+
+            <div class="flex">
+                <button class="roll-btn" id="roll-btn">Roll</button>
+                <button class="reroll-btn hidden not-displayed" id="reroll-btn">Re-roll 1s</button>
+            </div>
+            
+            
             <p class="total-score" id="total-score"></p>
-            <p class="previous-totals">Previous: <span id="previous-totals-span"></span></p>
-        </main>
+            <p class="previous-totals" id="previous-totals"></p>
+        
     </div>
     
 

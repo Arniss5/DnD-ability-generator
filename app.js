@@ -15,6 +15,7 @@ rerollBtn.addEventListener('click', reroll)
 //FUNCTIONS
 
 function roll() {
+    rerollBtn.classList.remove('not-displayed')
     current_dice = []
     getRandomRoll()
     getRollsArray()
@@ -82,23 +83,6 @@ function getTotal() {
 
 function getPrevious() {
     previousTotals.push(total)
-    document.getElementById('previous-totals-span').textContent = previousTotals.join(', ')
+    document.getElementById('previous-totals').textContent = `Previous: ${previousTotals.join(', ')}`
 }
 
-// getRollsArray()
-
-// renderDiceHtml()
-// checkForOnes()
-// getTotal()
-
-
-
-
-
-//if(rollsArray.includes(1)) {
-//     rerollBtn.classList.remove('hidden')
-//     rollBtn.classList.add('hidden')
-// } else {
-//     totalScore = rollsArray.reduce((a, b) => a + b, 0)
-//     console.log(totalScore)
-// }
