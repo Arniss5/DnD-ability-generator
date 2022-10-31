@@ -73,12 +73,20 @@ function checkForOnes() {
         rerollBtn.classList.add('hidden')
         rollBtn.classList.remove('hidden')
         getPrevious()
+        if (total < 10) {
+            document.getElementById('total-score-comment').textContent = ' Good luck I guess...'
+        } else if (total > 15) {
+            document.getElementById('total-score-comment').textContent = '🔥'
+        }
+
     }
 }
 
 function getTotal() {
+    document.getElementById('total-score-comment').textContent = ''
     total = current_dice.reduce((a, b) => a + b, 0) - Math.min(...current_dice)
     document.getElementById('total-score').textContent = `Total: ${total}`
+    
 }
 
 function getPrevious() {
