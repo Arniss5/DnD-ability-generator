@@ -29,8 +29,8 @@ main,
     background-image: url(https://images.unsplash.com/photo-1633506079263-7029b4f46762?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80);
     background-position: center;
     background-size: cover;
-    max-width: 800px;
-    min-height: 700px;
+    max-width: 700px;
+    min-height: 600px;
     margin: 2% auto;
     padding: 0 .5em 2em .5em;
     border: none;
@@ -123,7 +123,7 @@ button:active {
 
 /* MEDIA QUERIES */
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
     .container {
         border: 3px solid rgb(255, 153, 0)
     }
