@@ -30,7 +30,7 @@ main,
     background-position: center;
     background-size: cover;
     max-width: 700px;
-    min-height: 600px;
+    min-height: 95vh;
     margin: 2% auto;
     padding: 0 .5em 2em .5em;
     border: none;
@@ -77,12 +77,12 @@ header {
     text-align: center;
 }
 .total-score-comment {
-    font-size: 0.7;
+    font-size: 0.8;
     text-align: center;
 }
 
 .previous-totals {
-    margin: 1em 0;
+    font-size: 1rem;
 }
 
 /* BUTTONS */
@@ -139,9 +139,13 @@ button:active {
     .dice-container {
         flex-wrap: nowrap;
     }
+
+    .container {
+        min-height: 700px;
+    }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 400px) {
     body {
         font-size: 0.8rem;
     }
